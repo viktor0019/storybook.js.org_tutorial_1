@@ -8,7 +8,7 @@
         </label>
         <label :for="'title-' + task.id" :aria-label="task.title" class="title">
             <input type="text" readonly :value="task.title" :id="'title-' + task.id" name="title"
-                placeholder="Input title" style="background: blue" />
+                placeholder="Input title" style="background: yellow" />
             />
         </label>
         <button v-if="!isChecked" class="pin-button" @click="pinTask" :id="'pinTask-' + task.id"
